@@ -13,8 +13,8 @@
     <header>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__links-list-item no-bullit">
-            <a href="#" class="header__links no-underline">главная</a>
+          <li class="header__links-list-item active-link">
+            <a href="#" class="header__links active-link">главная</a>
           </li>
           <li class="header__links-list-item">
             <a href="#" class="header__links"> посмотреть лоты </a>
@@ -42,60 +42,73 @@
     <main>
       <section class="cover">
         <div class="overlay"></div>
-        <h1 class="cover__title aligned-text">
-          О<span class="cover__title-letter">но</span>
-        </h1>
-        <h1 class="cover__title aligned-text_center">
-          те<span class="cover__title-letter">бе</span>
-        </h1>
-        <h1 class="cover__title aligned-text_right">
-          <span class="cover__title-letter">н</span>адо
+        <h1 class="cover__title">
+          <span class="aligned-text">
+            О<span class="cover__title-letter">но</span>
+          </span>
+          <span class="aligned-text_center">
+            теб
+            <span class="cover__title-letter"> е </span>
+          </span>
+          <span class="aligned-text_right">
+            <span class="cover__title-letter"> н </span> адо
+          </span>
         </h1>
         <div class="cover__description">
-          <h2 class="cover__description-text">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не
             <span class="cover__description-text-space"> верил </span>
-          </h2>
-          <button class="bet-button">Сделать ставку</button>
+          </p>
+          <button type="button" class="bet-button">Сделать ставку</button>
         </div>
       </section>
 
       <section class="lots">
-        <h1 class="lots__heading">Лоты</h1>
-        <div class="lots__card-list">
-          <a href="#" class="card-link card_type_film lots__card-list-item">
-            <h2 class="card__title overlay">
-              Фильм режиссёра, который бросил киношколу
-            </h2>
-            <p class="card__text overlay">
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </p>
-          </a>
-          <a href="#" class="card-link card_type_book lots__card-list-item">
-            <h2 class="card__title overlay">
-              Книга, где описан один скучный день из жизни рекламного агента
-            </h2>
-            <p class="card__text overlay">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </p>
-          </a>
-          <a href="#" class="card-link card_type_picture lots__card-list-item">
-            <h2 class="card__title overlay">
-              Картина, которую повторит даже 5-летний сын маминой подруги
-            </h2>
-            <p class="card__text overlay">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков…
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </p>
-          </a>
-        </div>
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link card_type_film">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
+              <p class="card__text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link card_type_book">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p class="card__text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p class="card__text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков… Сколько бы вы на такое поставили, если бы не знали, что
+                это — одна из революционных работ Кандинского?
+              </p>
+            </a>
+          </li>
+        </ul>
         <a href="#" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
@@ -127,25 +140,21 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address">
-        <a href="tel:+99995555555" class="header__links-underline"
-          >+9 999 555 5555</a
-        >
-        <a href="mailto:info@sobaka.ge" class="header__links-underline"
-          >info@sobaka.ge</a
-        >
+      <address class="address footer__address">
+        <a href="tel:+99995555555" class="header__links">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="header__links">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
-      <nav class="footer__menu">
-        <ul class="footer__menu-list">
-          <li class="footer__menu-list-item">
-            <a href="#" class="footer__menu-link_active">главная</a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-item active-link">
+            <a href="#" class="menu-link active-link">главная</a>
           </li>
           <li class="footer__menu-list-item">
-            <a href="#" class="footer__menu-link"> посмотреть лоты </a>
+            <a href="#" class="menu-link"> посмотреть лоты </a>
           </li>
           <li class="footer__menu-list-item">
-            <a href="#" class="footer__menu-link">об аукционе</a>
+            <a href="#" class="menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
