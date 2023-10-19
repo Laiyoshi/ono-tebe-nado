@@ -3,22 +3,24 @@
 }
 
 header {
-  width: 1440px;
+  max-width: 1440px;
   display: grid;
-  grid-template-columns: 388px 1fr 240px;
-  padding: 92px 49px 90px 51px;
-  justify-content: space-between;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 92px 50px 90px 50px;
   align-items: center;
+  justify-self: end;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
 }
 
 .header__menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-self: space-between;
-  align-self: center;
+  justify-content: flex-start;
   font-size: 18px;
-  gap: 32px;
+  gap: 34px;
 }
 
 .header__links-list-item {
@@ -26,11 +28,11 @@ header {
   padding-bottom: 5px;
 }
 
-.header__links-list-item_no-bullit {
+.no-bullit {
   list-style: none;
   padding-bottom: 5px;
 }
-.header__links-no-underline {
+.no-underline {
   text-decoration: none;
 }
 
@@ -38,7 +40,7 @@ header {
   font-size: 20px;
 }
 
-.header__links-underline {
+.header__links {
   text-decoration: underline;
   text-underline-position: under;
   padding-bottom: 2px;
@@ -46,7 +48,7 @@ header {
 }
 
 .header__logo {
-  padding-right: 148px;
+  justify-content: center;
 }
 
 .header__logo-image {
@@ -57,22 +59,31 @@ header {
 }
 
 address {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: flex-end;
   line-height: 24px;
   text-align: left;
   font-size: 18px;
   font-style: normal;
 }
 
-address p {
+.address p {
   height: 50px;
+  max-width: 240px;
+}
+
+.address a {
+  width: 240px;
+}
+
+main {
+  max-width: 1440px;
 }
 
 .cover {
-  width: 1440px;
   background-image: url('../images/cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,7 +91,8 @@ address p {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  background-color: black;
 }
 
 .cover__title {
@@ -92,13 +104,13 @@ address p {
 }
 
 .aligned-text {
+  width: 100%;
   line-height: 115%;
-  width: 1340px;
   padding: 165px 0px 0px 50px;
 }
 
 .aligned-text_center {
-  width: 1280px;
+  width: 100%;
   padding-left: 160px;
   padding-top: 20px;
   text-align: center;
